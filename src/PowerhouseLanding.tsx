@@ -1,4 +1,5 @@
 import logo from "../images/PH-Logo-Light-L.png";
+import { useState } from "react";
 
 export default function PowerhouseLanding() {
   return (
@@ -19,7 +20,7 @@ export default function PowerhouseLanding() {
           <nav className="hidden gap-8 text-sm md:flex">
             <a href="#bridge" className="text-zinc-300 hover:text-white transition">Why</a>
             <a href="#snos" className="text-zinc-300 hover:text-white transition">What</a>
-            <a href="#products" className="text-zinc-300 hover:text-white transition">How</a>
+            <a href="#how" className="text-zinc-300 hover:text-white transition">How</a>
             <a href="#proof" className="text-zinc-300 hover:text-white transition">Proof</a>
           </nav>
           <a
@@ -36,10 +37,10 @@ export default function PowerhouseLanding() {
         <div className="mx-auto max-w-7xl px-6 pb-20 pt-24 md:pt-28">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="bg-gradient-to-r from-[#5B7CFF] via-[#6E6CF6] to-[#A855F7] bg-clip-text text-4xl font-extrabold tracking-tight text-transparent md:text-6xl">
-              AI‑Native Organizations, Open by Default
+              AI-Native Organizations, Open by Default
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-7 text-zinc-300 md:text-xl">
-              Scalable Network Organizations—programmable with AI, open‑source by default, and built to operate at real‑world scale.
+              Scalable Network Organizations—programmable with AI, open-source by default, and built to operate at real-world scale.
             </p>
             <p className="mx-auto mt-3 max-w-2xl text-base text-zinc-400">
               <span className="font-semibold">Deploy an organization like you deploy code.</span>
@@ -75,7 +76,7 @@ export default function PowerhouseLanding() {
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
               <h3 className="text-lg font-semibold">Faster building</h3>
-              <p className="mt-2 text-zinc-300">AI accelerates open‑source development; projects can ship and adapt at unprecedented speed.</p>
+              <p className="mt-2 text-zinc-300">AI accelerates open-source development; projects can ship and adapt at unprecedented speed.</p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
               <h3 className="text-lg font-semibold">Shared leverage</h3>
@@ -87,7 +88,7 @@ export default function PowerhouseLanding() {
             </div>
           </div>
           <p className="mt-10 text-center text-zinc-300">
-            Without new economics, AI will centralize power into a few monopolies. Powerhouse pairs <span className="font-semibold">Scalable Network Organizations</span> with <span className="font-semibold">Open Source Capitalism</span>—the organizational and economic model for AI‑native, open organizations.
+            Without new economics, AI will centralize power into a few monopolies. Powerhouse pairs <span className="font-semibold">Scalable Network Organizations</span> with <span className="font-semibold">Open Source Capitalism</span>—the organizational and economic model for AI-native, open organizations.
           </p>
           <p className="mt-4 text-center text-zinc-400 italic">Spin up an organization on demand.</p>
         </div>
@@ -96,10 +97,15 @@ export default function PowerhouseLanding() {
       {/* What: Two pillars */}
       <section id="snos" className="relative">
         <div className="mx-auto max-w-7xl px-6 py-20">
-          <div className="grid gap-8 lg:grid-cols-2">
+          <div className="text-center">
+            <p className="text-sm uppercase tracking-widest text-zinc-400">Our approach</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">Two pillars for AI-native, open organizations</h2>
+            <p className="mt-3 text-zinc-400">SNOs are the organizational form; Open-Source Capitalism is the economic & political model.</p>
+          </div>
+          <div className="mt-10 grid gap-8 lg:grid-cols-2">
             <div className="rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-6">
               <h3 className="text-2xl font-bold">Scalable Network Organizations (SNOs)</h3>
-              <p className="mt-2 text-zinc-300">AI‑native organizations.</p>
+              <p className="mt-2 text-zinc-300">AI-native organizations.</p>
               <ul className="mt-4 space-y-3 text-zinc-300 list-disc list-inside">
                 <li>Encode governance and finance in programmable rulebooks.</li>
                 <li>Let AI agents enforce scope, budget, and delivery while humans set direction.</li>
@@ -122,14 +128,19 @@ export default function PowerhouseLanding() {
       {/* Products */}
       <section id="products" className="relative border-y border-white/5 bg-[#0E0E14]">
         <div className="mx-auto max-w-7xl px-6 py-20">
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="text-center">
+            <p className="text-sm uppercase tracking-widest text-zinc-400">Our products</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">Achra and Vetra bring the model to life</h2>
+            <p className="mt-3 text-zinc-400">Coordination via a marketplace; enforcement via reactive documents and rulebooks.</p>
+          </div>
+          <div className="mt-10 grid gap-8 md:grid-cols-2">
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
               <h3 className="text-2xl font-bold">Achra — Marketplace for global coordination</h3>
               <p className="mt-2 text-zinc-300">Where humans and AI agents propose, deliver, and audit work.</p>
               <ul className="mt-4 space-y-3 text-zinc-300 list-disc list-inside">
                 <li>Open roadmaps, RFPs, milestones, and audit trails (transparency by default)</li>
-                <li>Milestone payouts in stablecoins with automated compliance (W‑9/1099)</li>
-                <li>Atlas‑powered governance: scoped authority, logged decisions, programmable approvals</li>
+                <li>Milestone payouts in stablecoins with automated compliance (W-9/1099)</li>
+                <li>Atlas-powered governance: scoped authority, logged decisions, programmable approvals</li>
               </ul>
               <a href="#achra" className="mt-5 inline-flex items-center gap-1 text-[#34eb4f] hover:text-white">Explore Achra →</a>
             </div>
@@ -138,8 +149,8 @@ export default function PowerhouseLanding() {
               <p className="mt-2 text-zinc-300">Where AI acts as a governed contributor.</p>
               <ul className="mt-4 space-y-3 text-zinc-300 list-disc list-inside">
                 <li>Define document types, UIs, and automations; publish as reusable packages</li>
-                <li>Spec‑driven AI: agents draft budgets, reconcile spend, and enforce rulebooks</li>
-                <li>Dev‑first SDKs; fork, extend, or self‑host—no lock‑in</li>
+                <li>Spec-driven AI: agents draft budgets, reconcile spend, and enforce rulebooks</li>
+                <li>Dev-first SDKs; fork, extend, or self-host—no lock-in</li>
               </ul>
               <a href="#vetra" className="mt-5 inline-flex items-center gap-1 text-[#34eb4f] hover:text-white">Explore Vetra →</a>
             </div>
@@ -147,24 +158,17 @@ export default function PowerhouseLanding() {
         </div>
       </section>
 
-      {/* Programmable orgs */}
-      <section className="relative">
+      {/* How it works */}
+      <section id="how" className="relative">
         <div className="mx-auto max-w-7xl px-6 py-20">
-          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Programmable organizations</h2>
-          <div className="mt-8 grid gap-8 md:grid-cols-3">
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-              <h3 className="text-xl font-semibold">Document models</h3>
-              <p className="mt-3 text-zinc-300">Policies become structured data. Approvals trigger workflows and payouts; history is version‑controlled and auditable.</p>
-            </div>
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-              <h3 className="text-xl font-semibold">Agents as governed contributors</h3>
-              <p className="mt-3 text-zinc-300">AI drafts budgets, reconciles spend, and proposes updates—within scoped authority and logged decisions.</p>
-            </div>
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-              <h3 className="text-xl font-semibold">Deploy like code</h3>
-              <p className="mt-3 text-zinc-300">Compose rulebooks and workflows from best‑practice components to <span className="font-semibold">spin up an organization on demand</span>.</p>
-            </div>
+          <div className="text-center">
+            <p className="text-sm uppercase tracking-widest text-zinc-400">How it works</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">Programmable organizations, end-to-end</h2>
+            <p className="mt-3 text-zinc-400">These pieces interlock: documents define rules, agents execute them, and deployments compose best-practice modules.</p>
           </div>
+
+          {/* Simple tabbed explainer to show the relationships */}
+          <Tabs />
         </div>
       </section>
 
@@ -174,8 +178,8 @@ export default function PowerhouseLanding() {
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
               <h3 className="text-2xl font-semibold">MakerDAO → Sky heritage</h3>
-              <p className="mt-3 text-zinc-300">We learned the hard lessons building in one of the longest‑running DAOs and turned them into repeatable systems.</p>
-              <p className="mt-3 text-zinc-300"><strong>Battle‑tested patterns:</strong> Atlas rulebooks, operational hubs, marketplace workflows shaped by real‑world delivery.</p>
+              <p className="mt-3 text-zinc-300">We learned the hard lessons building in one of the longest-running DAOs and turned them into repeatable systems.</p>
+              <p className="mt-3 text-zinc-300"><strong>Battle-tested patterns:</strong> Atlas rulebooks, operational hubs, marketplace workflows shaped by real-world delivery.</p>
               <p className="mt-3 text-zinc-300"><strong>Read the papers:</strong> SNOs, Atlas, and Open Source Capitalism.</p>
             </div>
             <div className="rounded-3xl border border-white/10 bg-gradient-to-b from-[#34eb4f]/10 to-transparent p-6">
@@ -201,6 +205,88 @@ export default function PowerhouseLanding() {
       <section id="contact" className="py-16 text-center">
         <p className="text-sm text-zinc-500">© {new Date().getFullYear()} Powerhouse · Privacy · Terms · Contact</p>
       </section>
+    </div>
+  );
+}
+
+/** Tabs: lightweight, no extra libraries */
+function Tabs() {
+  const [tab, setTab] = useState<'docs' | 'agents' | 'deploy'>('docs');
+  const base = "rounded-2xl border border-white/10 bg-white/5 p-6";
+
+  return (
+    <div className="mt-10">
+      <div className="mx-auto flex max-w-3xl items-center justify-center gap-2">
+        <button
+          onClick={() => setTab('docs')}
+          className={`px-4 py-2 text-sm rounded-xl border ${tab==='docs' ? 'border-white/20 bg-white/10' : 'border-white/10 bg-transparent'} hover:bg-white/10 transition`}
+        >
+          Document models
+        </button>
+        <button
+          onClick={() => setTab('agents')}
+          className={`px-4 py-2 text-sm rounded-xl border ${tab==='agents' ? 'border-white/20 bg-white/10' : 'border-white/10 bg-transparent'} hover:bg-white/10 transition`}
+        >
+          Agents as contributors
+        </button>
+        <button
+          onClick={() => setTab('deploy')}
+          className={`px-4 py-2 text-sm rounded-xl border ${tab==='deploy' ? 'border-white/20 bg-white/10' : 'border-white/10 bg-transparent'} hover:bg-white/10 transition`}
+        >
+          Deploy like code
+        </button>
+      </div>
+
+      <div className="mt-8 grid gap-8 md:grid-cols-3">
+        {tab === 'docs' && (
+          <>
+            <div className={base}>
+              <h3 className="text-xl font-semibold">Document models</h3>
+              <p className="mt-3 text-zinc-300">Policies become structured data. Approvals trigger workflows and payouts; history is version-controlled and auditable.</p>
+            </div>
+            <div className={base}>
+              <h3 className="text-xl font-semibold">Achra ↔ Vetra</h3>
+              <p className="mt-3 text-zinc-300">Achra defines work and milestones; Vetra stores rulebooks and automations that enforce them.</p>
+            </div>
+            <div className={base}>
+              <h3 className="text-xl font-semibold">Outcome</h3>
+              <p className="mt-3 text-zinc-300">Clear accountability and auditable trails across proposals, approvals, and payouts.</p>
+            </div>
+          </>
+        )}
+        {tab === 'agents' && (
+          <>
+            <div className={base}>
+              <h3 className="text-xl font-semibold">Agents as governed contributors</h3>
+              <p className="mt-3 text-zinc-300">AI drafts budgets, reconciles spend, and proposes updates—within scoped authority and logged decisions.</p>
+            </div>
+            <div className={base}>
+              <h3 className="text-xl font-semibold">Guardrails</h3>
+              <p className="mt-3 text-zinc-300">Spec-driven permissions ensure agents operate only within approved scopes.</p>
+            </div>
+            <div className={base}>
+              <h3 className="text-xl font-semibold">Outcome</h3>
+              <p className="mt-3 text-zinc-300">Human direction with AI speed: operations advance continuously and transparently.</p>
+            </div>
+          </>
+        )}
+        {tab === 'deploy' && (
+          <>
+            <div className={base}>
+              <h3 className="text-xl font-semibold">Deploy like code</h3>
+              <p className="mt-3 text-zinc-300">Compose rulebooks and workflows from best-practice components to <span className="font-semibold">spin up an organization on demand</span>.</p>
+            </div>
+            <div className={base}>
+              <h3 className="text-xl font-semibold">Templates & packages</h3>
+              <p className="mt-3 text-zinc-300">Start from community templates; extend and publish your own packages.</p>
+            </div>
+            <div className={base}>
+              <h3 className="text-xl font-semibold">Outcome</h3>
+              <p className="mt-3 text-zinc-300">Launch governance, payments, and operations as quickly as deploying software.</p>
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 }
